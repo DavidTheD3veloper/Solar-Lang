@@ -2,6 +2,14 @@
 
 ## Solar Programming Language — v1.0.2
 
+**Before you ask:** Why is the releasess tab empty now? Well, Solar is a pip downloadable package!
+To install it run:
+pip install solar-lang
+to update run:
+solar update 
+To see all the commands run:
+solar help
+
 **Stability, Expression Power, and Game-Oriented Growth**
 
 Solar v1.0.2 is a refinement and expansion of the ideas introduced in v1.0.1. This release focuses on **stability**, **better expression handling**, and **stronger foundations for game and UI development**, while keeping Solar simple, readable, and fun to experiment with.
