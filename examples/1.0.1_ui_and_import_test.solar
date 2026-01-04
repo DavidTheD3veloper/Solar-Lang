@@ -1,0 +1,26 @@
+contain pygame # test pygame import
+
+ui window main
+ui title main "Solar + customtkinter integration"
+ui size main 460 260
+ui bg main "#1e1e1e"
+ui fg main "#ffffff"
+
+ui label main l1 "Name:" at 20 20
+ui entry main name at 90 20
+
+ui checkbox main agree "I agree to everything" at 20 70
+
+def greet(n, ok):
+    print("Hello,", n, "| agree =", ok)
+
+def __solar_val(v):
+    return v.get() if hasattr(v, "get") and callable(v.get) else v
+
+def greet_bridge(n, ok):
+    greet(__solar_val(n), __solar_val(ok))
+
+funcs["greet"] = greet_bridge
+
+ui button main b1 "Submit" at 20 120 do greet name agree
+ui run main
