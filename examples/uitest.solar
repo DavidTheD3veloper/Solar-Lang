@@ -1,0 +1,14 @@
+ui window main
+ui title main "Solar UI Test"
+ui size main 420 260
+
+ui label main l1 "Name:" at 20 20
+ui entry main name at 100 20
+
+ui checkbox main agree "I agree to everything" at 20 70
+ui button main submit "Submit" at 20 120 do print name agree
+
+ui text submit "SEND"
+ui text agree "Actually I'm serious"
+
+ui run main

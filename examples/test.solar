@@ -1,0 +1,7 @@
+# variables
+let x = 10
+print x
+
+# function call sugar
+add 1 2
+mul 3 4
