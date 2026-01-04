@@ -1,124 +1,134 @@
-
 <img src="https://raw.githubusercontent.com/DavidTheD3veloper/Solar-Lang/refs/heads/main/solar.png" width="150" height="150" alt="Solar logo">
 
+## Solar Programming Language — v1.0.2
 
+**Stability, Expression Power, and Game-Oriented Growth**
 
-## Solar Programming Language — v1.0.1
+Solar v1.0.2 is a refinement and expansion of the ideas introduced in v1.0.1. This release focuses on **stability**, **better expression handling**, and **stronger foundations for game and UI development**, while keeping Solar simple, readable, and fun to experiment with.
 
-**A Big Jump from v1.0.0**
-
-Solar v1.0.1 is a major step forward in the evolution of the Solar programming language. While still experimental and learning-focused, this release significantly expands Solar’s capabilities—especially in UI control, Python integration, and extensibility.
-
-This version lays the groundwork for Solar becoming more than just a toy language, while keeping its syntax simple, hackable, and fun.
+This version represents Solar’s transition from a proof-of-concept language into a more cohesive and usable tool.
 
 ---
 
-## ✨ What’s New in v1.0.1
+## ✨ What’s New in v1.0.2
 
-### 🎨 Much Greater UI Control
+### 🧮 Expression Evaluation (Major Upgrade)
 
-Solar’s UI system has been upgraded and is now powered by **customtkinter**, allowing for:
+Solar v1.0.2 introduces a **proper expression evaluator**, allowing for:
 
-* Modern-looking widgets
-* Reliable text rendering on buttons, labels, and checkboxes
-* Per-window foreground (`ui fg`) and background (`ui bg`) styling
-* More predictable widget behavior and layout
+- Arithmetic expressions (`+`, `-`, `*`, `/`)
+- Parentheses and operator precedence
+- Inline math in assignments
+- Cleaner and more readable logic
 
-This makes Solar’s UI system far more usable and visually appealing than in v1.0.0.
-
----
-
-### 📦 Working Imports with `contain <package>`
-
-Solar now supports importing **real Python packages** directly:
-
+Example:
+```text
+let x = clamp(x + (right - left) * speed, 0, 760)
 ```
+
+This removes the need for awkward intermediate variables and makes real logic possible directly in Solar.
+
+---
+
+### 🎮 Native Pygame-Style Solar Syntax
+
+Solar now includes **Solar-native commands for Pygame**, making game development far more approachable:
+
+- Window creation
+- Input handling
+- Drawing rectangles and text
+- Game loops and FPS control
+
+All without writing raw Python.
+
+This is a major step toward Solar becoming a **game-oriented scripting language**.
+
+---
+
+### 📦 Improved `contain <package>` Imports
+
+The `contain` keyword is now more robust and reliable:
+
+```text
 contain pygame
-contain numpy
 contain pygame.mixer
+contain numpy
 ```
 
-This translates to actual Python `import` statements at runtime.
-If the package exists in your Python environment, Solar can use it immediately.
+Imports are resolved cleanly at runtime and work seamlessly alongside Solar-native systems.
 
 ---
 
-### 🐍 Python Passthrough (Intentional)
+### 🐍 Python Passthrough (Still First-Class)
 
-Solar v1.0.1 officially supports **raw Python passthrough**:
+Solar v1.0.2 continues to support **intentional Python passthrough**:
 
-* Full Python blocks (`def`, `class`, `if`, `for`, etc.)
-* Single-line Python statements
-* Direct access to Solar variables and the `funcs` registry
-* Seamless mixing of Solar syntax and Python code
+- Full Python blocks and statements
+- Direct access to Solar variables
+- Seamless mixing of Solar and Python code
 
-This keeps Solar small while still allowing advanced users to drop down to Python when needed.
-
----
-
-### 📂 Examples Included in the Repository
-
-To make Solar easier to learn and experiment with, **ready-to-run examples** are now included in the repository:
-
-* UI examples demonstrating windows, buttons, inputs, and styling
-* Import examples showing how to use `contain <package>`
-* Mixed Solar + Python examples for advanced use cases
-
-All examples can be found in the **`examples/` folder** and are meant to be modified, broken, and learned from.
+Solar doesn’t fight Python — it **embraces it**.
 
 ---
 
-### 🧩 A Stronger Language Core
+### 📂 Expanded Examples
 
-Internally, Solar now features:
+The repository now includes **more complete and realistic examples**, including:
 
-* Correct handling of quoted strings
-* Cleaner separation between Solar code and Python code
-* More reliable parsing and execution
-* A more stable foundation for future language features
+- Small games built with Solar + pygame
+- Input and collision examples
+- UI and rendering demonstrations
 
----
-
-## 🚀 What’s Coming Next
-
-Solar v1.0.1 is not the end goal—it’s a foundation for much bigger ideas.
-
-### 🎮 Pygame as Solar Syntax
-
-Future versions will introduce **native Solar syntax for Pygame**, including:
-
-* Window creation
-* Input handling
-* Rendering and drawing
-* Game loops
-
-All without writing Python directly.
+All examples are meant to be modified, explored, and broken.
 
 ---
 
-### 📦 A Solar Package Manager
+### 🧩 Stronger Core & Stability Improvements
 
-A future Solar release will introduce a **package manager** built specifically for the language.
+Internally, Solar v1.0.2 improves:
 
-This will allow:
+- Parsing reliability
+- Execution consistency
+- Error handling
+- Cleaner separation of Solar vs Python code
 
-* Installing Solar-specific packages
-* Creating and sharing reusable UI components
-* Writing community-driven extensions
-* Building useful libraries on top of Solar and Python
-
-The goal is to let Solar grow through its users, not just its core.
+This makes Solar more predictable and safer to extend in future versions.
 
 ---
 
-### 🌱 Beyond v1.0.1
+## 🚀 What’s Next
 
-Other planned improvements include:
+Solar v1.0.2 sets the stage for much bigger ideas.
 
-* More UI styling and layout options
-* Solar-level control flow (`if`, loops, etc.)
-* System and file access
-* Plugin-style extensibility
+### 📦 Solar Package Ecosystem
+
+Planned future features include:
+
+- A Solar-specific package manager
+- Community-built extensions
+- Reusable UI and game components
+
+---
+
+### 🎮 Deeper Game Development Support
+
+Upcoming versions aim to expand Solar’s game focus with:
+
+- More drawing primitives
+- Event-driven input
+- Scene and entity helpers
+- Asset loading helpers
+
+---
+
+### 🌱 Beyond v1.0.2
+
+Longer-term goals include:
+
+- Solar-level control flow (`if`, loops)
+- File and system access
+- Plugin-style extensibility
+- Performance improvements
 
 ---
 
@@ -126,13 +136,13 @@ Other planned improvements include:
 
 Solar remains:
 
-* Experimental
-* Open-source
-* Hackable
-* Built as a learning project
+- Experimental
+- Open-source
+- Hackable
+- Learning-focused
 
-It’s not trying to replace Python.
-It’s trying to **learn from it, build on it, and explore what’s possible**.
+It is **not trying to replace Python**.
 
-Solar v1.0.1 is a real milestone—and it’s just the beginning.
+Solar exists to explore how far a small, readable language can go when it stands on Python’s shoulders.
 
+**Solar v1.0.2 is a solid step forward — and the foundation for what comes next.**
