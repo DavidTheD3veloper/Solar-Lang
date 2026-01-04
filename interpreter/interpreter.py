@@ -462,11 +462,8 @@ def expr_to_py(expr: Expr) -> str:
 
 # runtime: sandbox-ish exec
 def run_compiled(py_src: str, funcs: dict[str, Callable[..., Any]]) -> None:
-    # parse to ensure its valid py code and optionally inspect ast for safety
     tree = ast.parse(py_src, mode="exec")
 
-    # this is not a true sandbox
-    # it just limits some stuff that we put into globals
     safe_globals = {
         "__builtins__": {
             "print": print,
@@ -485,14 +482,6 @@ def run_compiled(py_src: str, funcs: dict[str, Callable[..., Any]]) -> None:
     exec(compile(tree, filename="<solar_lang>", mode="exec"), safe_globals, local_env)
     vars_: dict[str, Any] = {}
     local_env["__run"](vars_, funcs)
-
-
-    
-    local_env: dict[str, Any] = {}
-    exec(compile(tree, filename="<solar_lang>", mode="exec"), safe_globals, local_env)
-    vars_: dict[str, Any] = {}
-    local_env["__run"](vars_, funcs)
-
 # dynamic function registry
 def default_funcs() -> dict[str, Callable[..., Any]]:
     funcs: dict[str, Callable[..., Any]] = {}
