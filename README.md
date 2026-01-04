@@ -2,9 +2,6 @@
 <img src="https://raw.githubusercontent.com/DavidTheD3veloper/Solar-Lang/refs/heads/main/solar.png" width="150" height="150" alt="Solar logo">
 
 
-Here’s the **final polished v1.0.1 description** with the **examples folder** clearly mentioned and integrated naturally into the text:
-
----
 
 ## Solar Programming Language — v1.0.1
 
