@@ -1,5 +1,6 @@
 
-<img src="https://raw.githubusercontent.com/DavidTheD3veloper/Solar-Lang/refs/heads/main/solar.png">
+<img src="https://raw.githubusercontent.com/DavidTheD3veloper/Solar-Lang/refs/heads/main/solar.png" width="50" height="50" alt="Solar logo">
+
 
 # Solar Programming Language
 
