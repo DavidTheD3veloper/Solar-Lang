@@ -4,11 +4,12 @@
 
 **Before you ask:** Why is the releasess tab empty now? Well, Solar is a pip downloadable package!
 To install it run:
-pip install solar-lang
+```pip install solar-lang```
 to update run:
-solar update 
+```solar update```
+(NOTE: After updating, run "solar version" if it still shows the old version number, run the update command again. That's not a issue with Solar, that's how pip works.)
 To see all the commands run:
-solar help
+```solar help```
 
 **Stability, Expression Power, and Game-Oriented Growth**
 
