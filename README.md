@@ -1,6 +1,7 @@
 
+<img src="https://raw.githubusercontent.com/DavidTheD3veloper/Solar-Lang/refs/heads/main/solar.png">
 
-# 🌞 Solar Programming Language
+# Solar Programming Language
 
 **Latest Version:** v1.0.0
 
