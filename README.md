@@ -2,7 +2,7 @@
 
 ## Solar Programming Language — v1.0.2
 
-**Before you ask:** Why is the releasess tab empty now? Well, Solar is a pip downloadable package!
+**Before you ask:** Why is the releases tab empty now? Well, Solar is a pip downloadable package!
 To install it run:
 ```pip install solar-lang```
 to update run:
