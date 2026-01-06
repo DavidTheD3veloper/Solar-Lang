@@ -25,7 +25,7 @@ solar help
 
 ---
 
-**Documentation available at:** <a href="https://solardocs.davidthed3veloper.is-a.dev>https://solardocs.davidthed3veloper.is-a.dev</a>
+**Documentation available at:** https://solardocs.davidthed3veloper.is-a.dev
 
 ## Stability, Functions, and a Major Language Leap
 
